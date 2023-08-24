@@ -1,4 +1,4 @@
-function Titulo(props) { // prop 
+function Greeting(props) { 
     console.log(props)
     return (
         <div>
@@ -13,4 +13,4 @@ function Titulo(props) { // prop
     )
 }
 
-export default Titulo
+export default Greeting

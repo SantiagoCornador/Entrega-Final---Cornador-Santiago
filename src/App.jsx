@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import NavBar from './Componentes/Navbar/Navbar';
-import Titulo from './Componentes/Titulo/Titulo'
+import Greeting from './Componentes/ItemListContainer/ItemListContainer';
 import Footer from './Componentes/Footer/Footer';
 
  //import './App.css'
@@ -23,7 +23,7 @@ function App() {
       
       <NavBar />
 
-      <Titulo titulo= {titulo} subtitulo= {subtitulo} />
+      <Greeting titulo= {titulo} subtitulo= {subtitulo} />
 
       <label>
                 <strong>{ count }</strong>

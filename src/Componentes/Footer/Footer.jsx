@@ -1,4 +1,4 @@
-import Titulo from "../Titulo/Titulo"
+import Titulo from "../ItemListContainer/Titulo"
 
 const Footer = () => {
     return (
