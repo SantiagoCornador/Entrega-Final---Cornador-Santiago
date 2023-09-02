@@ -1,40 +1,42 @@
 import { useState } from 'react'
 
-import NavBar from './Componentes/Navbar/Navbar';
-import Greeting from './Componentes/ItemListContainer/ItemListContainer';
-import Footer from './Componentes/Footer/Footer';
+import Navbar from './Componentes/Navbar/Navbar'
+import Titulo from './Componentes/ItemListContainer/ItemListContainer'
+import Footer from './Componentes/Footer/Footer'
 
- //import './App.css'
+// import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Saludar from './Componentes/ItemListContainer/ItemListContainer';
 
 
 
-function App() {
+
+function App() { 
+   
   const [count, setCount] =  useState(0)
 
-  const titulo = 'Tienda SC'
-  const subtitulo = 'Los mejos buzos'
+    const titulo = 'Hola soy un titulo'
+    const subtitulo = 'Hola soy un subtitulo'
 
-  const addCount = () => {
-    setCount(count + 1) 
-}
-  return (
-    <div>
-      
-      <NavBar />
+    const addCount = () => {
+        setCount(count + 1)
+    }
 
-      <Greeting titulo= {titulo} subtitulo= {subtitulo} />
+    return (
+        <div>
+            <Navbar /> 
 
-      <label>
+            <Saludar titulo={titulo} subtitulo={subtitulo} />
+
+            <label>
                 <strong>{ count }</strong>
             </label>
             <button onClick={addCount}> + 1 </button>
 
-      <Footer />
-
-    </div>
-  )
-
+            <Footer />
+            
+        </div>
+    )
 }
 
 export default App

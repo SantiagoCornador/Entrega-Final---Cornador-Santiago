@@ -1,4 +1,4 @@
-function Greeting(props) { 
+function Saludar(props) { 
     console.log(props)
     return (
         <div>
@@ -8,9 +8,8 @@ function Greeting(props) {
             <h2>
                 {props.subtitulo}
             </h2>
-            
         </div>
     )
 }
 
-export default Greeting
+export default Saludar

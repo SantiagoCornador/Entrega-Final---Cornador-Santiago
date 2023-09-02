@@ -1,12 +1,11 @@
-import Titulo from "../ItemListContainer/Titulo"
+import Titulo from "../ItemListContainer/ItemListContainer"
 
-const Footer = () => {
-    return (
-        <footer>
-            <Titulo titulo='soy un titulo de footer' subtitulo='subtitulo de footer' />
-            <h3>Footer</h3>
-        </footer>
-    )
-}
+
+const Footer = () =>    <footer>
+                            <Titulo titulo='soy un titulo de footer' subtitulo='subtitulo footer'  />
+                            <h3>
+                                esto es footer
+                            </h3>
+                        </footer>
 
 export default Footer
