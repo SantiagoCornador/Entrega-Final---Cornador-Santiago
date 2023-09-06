@@ -1,12 +1,13 @@
 import { useState } from 'react'
 
-import Navbar from './Componentes/Navbar/Navbar'
-import Titulo from './Componentes/ItemListContainer/ItemListContainer'
+import NavBar from './Componentes/Navbar/NavBar';
 import Footer from './Componentes/Footer/Footer'
+import Saludar from './Componentes/ItemListContainer/ItemListContainer';
 
 // import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Saludar from './Componentes/ItemListContainer/ItemListContainer';
+
+
 
 
 
@@ -24,7 +25,7 @@ function App() {
 
     return (
         <div>
-            <Navbar /> 
+            <NavBar />
 
             <Saludar titulo={titulo} subtitulo={subtitulo} />
 
