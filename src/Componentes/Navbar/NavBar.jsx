@@ -27,7 +27,7 @@ const NavBar = () => {
             </NavDropdown>
             4 <CartWidget/>
           </Nav>
-          
+            
         </Navbar.Collapse>
       </Container>
     </Navbar>
