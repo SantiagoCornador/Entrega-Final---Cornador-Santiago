@@ -7,6 +7,7 @@ import ItemCount from './Componentes/Counter/ItemCount';
 
 // import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
 
 
 
@@ -15,15 +16,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {    
-    const onAdd = (count)  => {
-        console.log (count)
-    }
-
+    
     return (
         <div>
             <NavBar />
 
             <ItemListContainer />
+
+            <ItemDetailContainer />
 
             <ItemCount inital={1} stock ={5} onAdd={onAdd}/>
 

@@ -48,15 +48,10 @@ export const productos = [
         
     },
 ]
-export const mFecth = () => new Promise ((res, rej) => {
+export const mFecth = (pid) => new Promise ((res, rej) => {
 
-    const condition = true
-    if (condition){
         setTimeout(() => { 
-        res(productos);
-    }, 3000);
-    } else {
-    rej('Sin productos')
-    }
-
+        res(pid ? productos.find (productos => productos.id === pid): productos)
+    }, 3000)
 })
+
