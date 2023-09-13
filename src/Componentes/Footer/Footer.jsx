@@ -1,8 +1,5 @@
-import Titulo from "../ItemListContainer/ItemListContainer"
-
 
 const Footer = () =>    <footer>
-                            <Titulo titulo='soy un titulo de footer' subtitulo='subtitulo footer'  />
                             <h3>
                                 esto es footer
                             </h3>

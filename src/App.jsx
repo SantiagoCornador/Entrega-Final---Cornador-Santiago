@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 import NavBar from './Componentes/Navbar/NavBar';
 import Footer from './Componentes/Footer/Footer'
-import Saludar from './Componentes/ItemListContainer/ItemListContainer';
+import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
+import ItemCount from './Componentes/Counter/ItemCount';
 
 // import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,27 +13,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-function App() { 
-   
-  const [count, setCount] =  useState(0)
 
-    const titulo = 'Hola soy un titulo'
-    const subtitulo = 'Hola soy un subtitulo'
-
-    const addCount = () => {
-        setCount(count + 1)
+function App() {    
+    const onAdd = (count)  => {
+        console.log (count)
     }
 
     return (
         <div>
             <NavBar />
 
-            <Saludar titulo={titulo} subtitulo={subtitulo} />
+            <ItemListContainer />
 
-            <label>
-                <strong>{ count }</strong>
-            </label>
-            <button onClick={addCount}> + 1 </button>
+            <ItemCount inital={1} stock ={5} onAdd={onAdd}/>
 
             <Footer />
             
