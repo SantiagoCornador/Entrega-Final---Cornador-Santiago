@@ -7,10 +7,10 @@ import ItemCount from "../../Counter/ItemCount";
         }
     
       return (
-        <div classname="row">
+        <div classnName="row">
             <h2>Detalle</h2>
-            <div classname="col">
-                <img src={"productos.imageUrl"} alt="imagen" />
+            <div className="col">
+                <img className="w-25" src={productos.imageUrl} alt="imagen" />
                 <div>
                     <p>Nombre: {productos.name}</p>
                     <p>Descripción: {productos.description}</p>
@@ -18,11 +18,11 @@ import ItemCount from "../../Counter/ItemCount";
                     <p>Stock: {productos.stock}</p>
                 </div>
             </div>
-            <div classname="col">
-            <ItemCount initial= {1} sotck= {5} onAdd={onAdd}/>
+            <div className="col">
+            <ItemCount initial= {1} stock= {5} onAdd={onAdd}/>
             </div>
         </div>
       )
     }
     
-    export default ItemDetail
+    export default ItemDetail 

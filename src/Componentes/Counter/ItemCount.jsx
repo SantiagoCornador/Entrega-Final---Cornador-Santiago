@@ -1,18 +1,32 @@
+import { useState } from "react"
 
 
 
+const ItemCount = ({initial, stock, onAdd}) => {
+    const [counter, setcounter] = useState(initial)
 
-const ItemCount = ({inital, stock, onAdd}) => {
-    const {count, handleAdd, handleSubstract} = useCounter (inital, stock )
-    
+    const handleAdd = () =>{
+        if (counter < stock) {
+            setcounter (counter + 1)
+        }
+    }
+    const handleSubstract = () =>{
+        if (counter > initial) {
+            setcounter (counter - 1)
+        }
+    }
+    const handleOnAdd = () =>{
+        onAdd (counter)
+        }
+
     return  <center>    
                     <h2>Counter</h2>
-                    <button onClick={() =>{}}> + 1 </button>
+                    <button onClick={handleAdd}> + 1 </button>
                     <label>
-                        <strong>{ count }</strong>
+                        <strong> { counter } </strong>
                     </label>
-                    <button onClick={() =>{}}> - 1 </button>
-                    <button onClick={() => onAdd(count)}>Agregar al carrito</button>
+                    <button onClick={handleSubstract}> - 1 </button>
+                    <button onClick={ handleOnAdd }>Agregar al carrito</button>
             </center>
 
 }

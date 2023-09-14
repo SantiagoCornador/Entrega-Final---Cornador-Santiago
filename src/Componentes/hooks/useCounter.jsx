@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 
 export const useCounter = (min, max) => {
-    const [count, setCount] = useState (min)
+    const [counter, setcounter] = useState (min)
 
     const handleAdd = () => {
-        if (count < max ){
-            setCount (count + 1)
+        if (counter < max ){
+            setcounter (counter + 1)
         }
             
     }
     const handleSubstract = () => {
         if (count > min  ){
-            setCount (count - 1)
+            setcounter (counter - 1)
     }
     }
     return {count, handleAdd, handleSubstract}
 }
+
+export default useCounter
