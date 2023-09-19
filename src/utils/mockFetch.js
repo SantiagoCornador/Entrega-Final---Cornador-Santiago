@@ -3,6 +3,7 @@ export const productos = [
     { 
         id: 1, 
         name: 'Zapatilla', 
+        category: 'Zapatillas', 
         stock: 8, 
         price: 10000, 
         description: 'Aire Force',
@@ -13,6 +14,7 @@ export const productos = [
     { 
         id: 2, 
         name: 'Buzo', 
+        category: 'Buzos', 
         stock: 10,  
         price: 7000, 
         description: 'Buzo Invierno',
@@ -21,7 +23,8 @@ export const productos = [
 
     { 
         id: 3, 
-        name: 'Pantalón', 
+        name: 'Pantalón',
+        category: 'Pantalones', 
         stock: 12, 
         price: 9000, 
         description: 'Pantalon Joggin',
@@ -32,6 +35,7 @@ export const productos = [
     { 
         id: 4, 
         name: 'Remeras', 
+        category: 'Remeras', 
         stock: 15, 
         price: 4000, 
         description: 'Remeras lisas de algodón',
@@ -42,6 +46,7 @@ export const productos = [
     { 
         id: 5, 
         name: 'Jeans', 
+        category: 'Pantalones', 
         stock: 12, 
         price: 10000, 
         description: 'Jeans',
@@ -52,6 +57,6 @@ export const mFecth = (pid) => new Promise ((res, rej) => {
 
         setTimeout(() => { 
         res(pid ? productos.find (productos => productos.id === pid): productos)
-    }, 3000)
+    }, 1000)
 })
 
