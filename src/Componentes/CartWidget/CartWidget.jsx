@@ -1,7 +1,9 @@
+import { useCartContext } from "../../Context/CartContext"
 
 function CartWidget() {
+  const{cantidadTotal} = useCartContext()
   return (
-    <div>🛒</div>
+    <div>🛒{cantidadTotal() != 0 && cantidadTotal()}</div>
   )
 }
 

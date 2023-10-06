@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -20,11 +19,12 @@ const NavBar = () => {
             <NavLink className ={({isActive})=>isActive ? 'btn btn-primary':'btn btn-outline-primary'} to='/category/Buzos'>Buzos</NavLink>
             <NavLink className ={({isActive})=>isActive ? 'btn btn-primary':'btn btn-outline-primary'} to='/category/Pantalones'>Pantalones</NavLink>
             <NavLink className ={({isActive})=>isActive ? 'btn btn-primary':'btn btn-outline-primary'} to='/category/Zapatillas'>Zapatillas</NavLink>
+            
           
           </Nav>
           <Nav>
-            <Link to='/Detalle'>
-              4 <CartWidget/>
+            <Link to='/cart'>
+              <CartWidget/>
             </Link>
           </Nav>
         </Navbar.Collapse>

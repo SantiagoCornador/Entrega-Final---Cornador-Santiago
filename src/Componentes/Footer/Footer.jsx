@@ -1,7 +1,7 @@
 
 const Footer = () =>    <footer>
                             <h3>
-                                esto es footer
+                                Tienda SC
                             </h3>
                         </footer>
 
