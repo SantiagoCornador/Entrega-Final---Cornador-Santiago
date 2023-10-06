@@ -1,8 +1,14 @@
-# React + Vite
+Nombre y apellido: Santiago Cornador
+Trabajo: Entrega Final react JS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Deploy - DEMO:
+https://652069b088ca883dc27ba3b2--celebrated-cendol-7e5b35.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Librerías externas usadas: 
+- "bootstrap": "^5.3.1",
+- "react": "^18.2.0",
+- "react-bootstrap": "^2.8.0",
+- "react-dom": "^18.2.0",
+- "bootstrap-icons": "^1.10.5",
+- "firebase": "^10.4.0",
